@@ -1,10 +1,11 @@
-const jwt = require("jsonwebtoken");
 const UserModel = require("../models/Usermodal");
+const jwt = require("jsonwebtoken");
 
 const ReqiredSignIn = async (req, res, next) => {
+  const token = req.headers.authorization;
   try {
     const decode = jwt.verify(
-      req.headers.authorization,
+      token,
       process.env.JWT_SECRET_KEY
     );
     req.user = decode;
@@ -36,7 +37,7 @@ const IsAdmin = async (req, res, next) => {
 };
 
 const CheckToken = async (req, res, next) => {
-   console.log(req.body);
+  console.log(req.body);
 };
 
 module.exports = {

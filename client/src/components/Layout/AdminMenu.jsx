@@ -13,7 +13,7 @@ function AdminMenu() {
           to="/admin-createproduct"
           className={`list-group-item w-full  hover:bg-slate-400 bg-slate-200  lg:p-1 md:p-1  rounded text-center mb-1 ${
             location.pathname === "/admin-createproduct"
-              ? "bg-green-400 text-white"
+              ? "bg-yellow-300 text-white"
               : ""
           }`}
         >
@@ -23,7 +23,7 @@ function AdminMenu() {
           to="/admin-createcategory"
           className={`list-group-item w-full  hover:bg-slate-400 bg-slate-200  lg:p-1 md:p-1  rounded text-center mb-1 ${
             location.pathname === "/admin-createcategory"
-              ? "bg-green-400 text-white"
+              ? "bg-yellow-300 text-white"
               : ""
           }`}
         >
@@ -33,7 +33,7 @@ function AdminMenu() {
           to="/admin-users"
           className={`list-group-item w-full  hover:bg-slate-400 bg-slate-200  lg:p-1 md:p-1  rounded text-center mb-1 ${
             location.pathname === "/admin-users"
-              ? "bg-green-400 text-white"
+              ? "bg-yellow-300 text-white"
               : ""
           }`}
         >
