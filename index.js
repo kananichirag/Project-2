@@ -6,6 +6,7 @@ const IndexRoutes = require("./routes/IndexRoutes");
 require("dotenv").config({ path: path.join(__dirname, ".env") });
 const cors = require("cors");
 
+app.use(express.urlencoded({extended:false}))
 app.use(express.json());
 app.use(cors());
 app.use("/v1", IndexRoutes);
